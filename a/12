@@ -1,0 +1,87 @@
+Ex. No: 13 — Reshape Data using melt() and pivot() Functions in Pandas
+Aim
+
+To reshape data using melt() and pivot() functions.
+
+Theory
+
+melt() converts wide data into long format.
+pivot() converts long format back into wide format.
+
+
+Software / Tools Required
+•
+Python 3.x
+•
+Anaconda Distribution
+•
+Jupyter Notebook / IDLE / Google Colab
+•
+Pandas Library
+
+Program
+import pandas as pd
+
+# Creating DataFrame
+data = {
+    'Name': ['Ravi', 'Anu', 'Kumar'],
+    'Maths': [85, 90, 78],
+    'Science': [88, 92, 80]
+}
+
+df = pd.DataFrame(data)
+
+print("Original DataFrame:")
+print(df)
+
+# Melt function
+melted_df = pd.melt(df,
+                    id_vars=['Name'],
+                    var_name='Subject',
+                    value_name='Marks')
+
+print("\nMelted DataFrame:")
+print(melted_df)
+
+# Pivot function
+pivoted_df = melted_df.pivot(index='Name',
+                             columns='Subject',
+                             values='Marks')
+
+print("\nPivoted DataFrame:")
+print(pivoted_df)
+
+
+
+Procedure
+Open Jupyter Notebook.
+Import Pandas library.
+Create DataFrame in wide format.
+Display original data.
+Use melt() function.
+Convert data into long format.
+Display melted data.
+Use pivot() function.
+Convert back into wide format.
+Execute and verify output.
+
+
+
+Output
+Original DataFrame:
+    Name  Maths  Science
+0   Ravi     85       88
+1    Anu     90       92
+2  Kumar     78       80
+
+Melted DataFrame:
+    Name  Subject  Marks
+0   Ravi    Maths     85
+1    Anu    Maths     90
+2  Kumar    Maths     78
+3   Ravi  Science     88
+
+
+Result
+
+Thus the dataset was successfully reshaped using melt() and pivot() functions.
