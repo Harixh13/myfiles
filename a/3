@@ -1,0 +1,63 @@
+Aim
+
+To create and manipulate arrays using NumPy functions.
+
+Theory
+
+NumPy is used for numerical operations and array processing.
+It provides fast and memory-efficient array handling.
+
+Program
+import numpy as np
+
+# Create array
+arr = np.arange(1, 13)
+
+# Reshape array
+reshaped = arr.reshape(3, 4)
+
+# Display arrays
+print("Original Array:")
+print(arr)
+
+print("\nReshaped Array:")
+print(reshaped)
+
+# Shape and sum
+print("\nShape:", reshaped.shape)
+print("Sum:", np.sum(reshaped))
+print("Maximum:", np.max(reshaped))
+print("Minimum:", np.min(reshaped))
+
+
+Procedure
+Open Jupyter Notebook.
+Import NumPy library.
+Create array using arange().
+Store values in variable.
+Use reshape() to change dimensions.
+Display original array.
+Display reshaped array.
+Find shape using shape.
+Find sum, max, and min values.
+Execute and verify output.
+
+
+Output
+Original Array:
+[ 1  2  3  4  5  6  7  8  9 10 11 12]
+
+Reshaped Array:
+[[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
+
+Shape: (3, 4)
+Sum: 78
+Maximum: 12
+Minimum: 1
+
+
+Result
+
+Thus NumPy array creation and manipulation were performed successfully.
