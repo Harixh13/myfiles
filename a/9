@@ -1,0 +1,87 @@
+Ex. No: 10 — Sort and Filter Data Based on Multiple Conditions in Pandas
+Aim
+
+To sort and filter data in Pandas DataFrame.
+
+Theory
+
+Sorting arranges data in ascending or descending order.
+Filtering extracts records satisfying conditions.
+
+Software / Tools Required
+•
+Python 3.x
+•
+Anaconda Distribution
+•
+Jupyter Notebook / IDLE / Google Colab
+•
+Pandas Library
+
+Program
+import pandas as pd
+
+# Creating DataFrame
+data = {
+    'Name': ['Ravi', 'Anu', 'Kumar', 'Divya', 'Arun', 'Meena'],
+    'Department': ['AI&DS', 'CSE', 'AI&DS', 'ECE', 'CSE', 'AI&DS'],
+    'Marks': [88, 92, 79, 85, 90, 95]
+}
+
+df = pd.DataFrame(data)
+
+print("Original DataFrame:")
+print(df)
+
+# Sorting
+print("\nSorted by Marks:")
+print(df.sort_values(by='Marks'))
+
+# Multiple sorting
+print("\nSorted by Department and Marks:")
+print(df.sort_values(by=['Department', 'Marks'],
+                     ascending=[True, False]))
+
+# Single condition
+print("\nMarks > 85:")
+print(df[df['Marks'] > 85])
+
+# Multiple conditions
+print("\nAI&DS Students with Marks > 85:")
+print(df[(df['Department'] == 'AI&DS') &
+         (df['Marks'] > 85)])
+
+         
+Procedure
+Import Pandas library.
+Create DataFrame.
+Display original dataset.
+Sort by single column.
+Sort by multiple columns.
+Apply single filtering condition.
+Apply multiple conditions.
+Use logical operators.
+Display filtered data.
+Execute and verify output.
+
+
+
+
+Output
+Marks > 85:
+    Name Department  Marks
+0   Ravi     AI&DS     88
+1    Anu        CSE     92
+4   Arun        CSE     90
+5  Meena     AI&DS     95
+
+AI&DS Students with Marks > 85:
+    Name Department  Marks
+0   Ravi     AI&DS     88
+5  Meena     AI&DS     95
+
+
+
+Result
+
+Thus sorting and filtering operations were successfully performed in Pandas.
