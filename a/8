@@ -1,0 +1,80 @@
+Ex. No: 9 — Group and Aggregate Data in Pandas using groupby()
+Aim
+
+To group and aggregate data using Pandas groupby() function.
+
+Theory
+
+Grouping divides data into categories and aggregation performs calculations like mean, sum, and count.
+
+Software / Tools Required
+•
+Python 3.x
+•
+Anaconda Distribution
+•
+Jupyter Notebook / IDLE / Google Colab
+•
+Pandas Library
+
+Program
+import pandas as pd
+
+# Creating DataFrame
+data = {
+    'Department': ['AI&DS', 'CSE', 'AI&DS', 'ECE', 'CSE', 'AI&DS'],
+    'Student': ['Ravi', 'Anu', 'Kumar', 'Divya', 'Arun', 'Meena'],
+    'Marks': [88, 92, 79, 85, 90, 95]
+}
+
+df = pd.DataFrame(data)
+
+print("Original DataFrame:")
+print(df)
+
+# Mean marks
+print("\nAverage Marks:")
+print(df.groupby('Department')['Marks'].mean())
+
+# Student count
+print("\nStudent Count:")
+print(df.groupby('Department')['Student'].count())
+
+# Multiple aggregations
+print("\nAggregations:")
+print(df.groupby('Department')['Marks'].agg(['min', 'max', 'mean', 'sum']))
+
+
+
+Procedure
+Open Jupyter Notebook.
+Import Pandas library.
+Create DataFrame with sample data.
+Display original data.
+Use groupby() function.
+Calculate average marks.
+Count students department-wise.
+Apply multiple aggregations.
+Display grouped results.
+Verify output.
+
+
+
+
+Output
+Average Marks:
+Department
+AI&DS    87.33
+CSE      91.00
+ECE      85.00
+
+Student Count:
+Department
+AI&DS    3
+CSE      2
+ECE      1
+
+
+Result
+
+Thus grouping and aggregation were successfully performed using groupby().
