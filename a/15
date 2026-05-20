@@ -14,63 +14,82 @@ Matplotlib is a Python library used for creating graphs and charts.
 Line Plot → Shows trends over data
 Bar Chart → Compares values between categories
 
+
+Line Plot:
+•Shows the trend of a variable over another continuous variable.
+•Useful for time series or sequential data.
+
+Bar Chart:
+•Represents categorical data with rectangular bars.
+•Height of the bar indicates the value of the variable.
+•Useful for comparing discrete categories.
+
+Techniques Used
+1.Importing Matplotlib
+oimport matplotlib.pyplot as plt is used for plotting.
+
+2.Creating Data
+oUse Python lists or NumPy arrays for x and y values.
+
+3.Line Plot
+oplt.plot(x, y) creates a line plot.
+oplt.title(), plt.xlabel(), plt.ylabel() add titles and labels.
+oplt.grid() adds grid lines.
+
+4.Bar Chart
+oplt.bar(categories, values) creates a bar chart.
+oColors and labels enhance readability.
+
+5.Displaying Plots
+oplt.show() renders the plots.
+
+6.Interpretation
+oIdentify trends, peaks, and comparisons from the plots.
+
+
+
 Software / Tools Required
-•
-Python 3.x
-•
-Anaconda Distribution
-•
-Jupyter Notebook / IDLE / Google Colab
-•
-NumPy and Pandas Libraries
+•Python 3.x
+•Anaconda Distribution
+•Jupyter Notebook / IDLE / Google Colab
+•NumPy and Pandas Libraries
 
 
 
 Program
 import matplotlib.pyplot as plt
-
-# Sample data
-students = ['Ravi', 'Anu', 'Kumar', 'Divya']
-marks = [85, 90, 78, 92]
-
+# Data for plotting
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
+sales = [200, 250, 300, 280, 350]
 # Line Plot
-plt.figure(figsize=(6,4))
-
-plt.plot(students,
-         marks,
-         marker='o')
-
-plt.title("Line Plot")
-plt.xlabel("Students")
-plt.ylabel("Marks")
-
+plt.figure(figsize=(8,5))
+plt.plot(months, sales, marker='o', color='blue')
+plt.title('Monthly Sales Trend')
+plt.xlabel('Month')
+plt.ylabel('Sales')
+plt.grid(True)
 plt.show()
-
 # Bar Chart
-plt.figure(figsize=(6,4))
-
-plt.bar(students,
-        marks)
-
-plt.title("Bar Chart")
-plt.xlabel("Students")
-plt.ylabel("Marks")
-
+plt.figure(figsize=(8,5))
+plt.bar(months, sales, color='green')
+plt.title('Monthly Sales Comparison')
+plt.xlabel('Month')
+plt.ylabel('Sales')
 plt.show()
 
 
 
 Procedure
-Open Jupyter Notebook.
-Import Matplotlib library.
-Create sample dataset.
-Store student names and marks.
-Use plot() for line graph.
-Add title and axis labels.
-Display line plot using show().
-Use bar() for bar chart.
-Display bar chart.
-Verify graphical output.
+1.Start the program.
+2.Import Matplotlib library.
+3.Create a dataset for plotting.
+4.Create a line plot using plt.plot().
+5.Add title, labels, and grid.
+6.Display the line plot.
+7.Create a bar chart using plt.bar().
+8.Add title and labels.
+9.Display the bar chart.
+10.Stop the program.
 
 
 Output
