@@ -1,0 +1,97 @@
+Ex. No: 7 — Create and Index a Pandas Series and DataFrame
+
+From the uploaded FDS manual
+
+Aim
+
+To create and index Pandas Series and DataFrame objects.
+
+Theory
+
+Pandas Series is a one-dimensional data structure.
+DataFrame is a two-dimensional table with rows and columns.
+Indexing helps access specific data easily.
+
+Software / Tools Required
+•
+Python 3.x
+•
+Anaconda Distribution
+•
+Jupyter Notebook / Google Colab / IDLE
+•
+Pandas Library
+
+Program
+import pandas as pd
+
+# Creating Series
+marks = pd.Series([78, 85, 62, 90],
+                  index=['Maths', 'Physics', 'Chemistry', 'AI'])
+
+print("Pandas Series:")
+print(marks)
+
+# Accessing values
+print("\nMarks in Physics:", marks['Physics'])
+print("Marks using position index:", marks.iloc[2])
+
+# Creating DataFrame
+data = {
+    'Name': ['Ravi', 'Anu', 'Kumar', 'Divya'],
+    'Department': ['AI&DS', 'CSE', 'AI&DS', 'ECE'],
+    'Marks': [88, 92, 79, 85]
+}
+
+df = pd.DataFrame(data)
+
+print("\nPandas DataFrame:")
+print(df)
+
+# loc indexing
+print("\nUsing loc:")
+print(df.loc[1])
+
+# iloc indexing
+print("\nUsing iloc:")
+print(df.iloc[2])
+
+# Selecting column
+print("\nMarks Column:")
+print(df['Marks'])
+
+
+Procedure
+Open Jupyter Notebook.
+Import Pandas library.
+Create a Pandas Series.
+Assign custom indexes.
+Access Series elements.
+Create DataFrame using dictionary.
+Display DataFrame.
+Use loc for label indexing.
+Use iloc for position indexing.
+Execute and verify output.
+
+
+Output
+Pandas Series:
+Maths        78
+Physics      85
+Chemistry    62
+AI           90
+
+Marks in Physics: 85
+Marks using position index: 62
+
+Pandas DataFrame:
+    Name Department  Marks
+0   Ravi     AI&DS     88
+1    Anu        CSE     92
+2  Kumar     AI&DS     79
+3  Divya        ECE     85
+
+
+Result
+
+Thus the Pandas Series and DataFrame were successfully created and indexed.
