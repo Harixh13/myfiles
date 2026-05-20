@@ -1,0 +1,78 @@
+Ex. No:  — Manipulation and Filtering of Lists, Dictionaries, and Tuples
+Aim
+
+To manipulate and filter lists, tuples, and dictionaries in Python.
+
+Theory
+
+Python data structures like list, tuple, and dictionary are used to store and process data efficiently.
+
+Program
+# List Manipulation
+numbers = [10, 25, 30, 45, 60]
+
+numbers.append(80)
+numbers.remove(25)
+
+even_numbers = [n for n in numbers if n % 2 == 0]
+
+print("List after manipulation:", numbers)
+print("Filtered even numbers:", even_numbers)
+
+# Tuple Filtering
+marks = (78, 85, 62, 90, 55)
+
+high_marks = tuple(m for m in marks if m > 70)
+
+print("Tuple values:", marks)
+print("Filtered marks (>70):", high_marks)
+
+# Dictionary Manipulation
+student = {
+    "name": "Ravi",
+    "age": 20,
+    "department": "AI&DS",
+    "marks": 88
+}
+
+student["grade"] = "A"
+student["marks"] = 92
+
+filtered_student = {
+    k: v for k, v in student.items() if k != "age"
+}
+
+print("Dictionary after manipulation:", student)
+print("Filtered dictionary:", filtered_student)
+
+
+Procedure
+Open Python/Jupyter Notebook.
+Create a list with values.
+Add elements using append().
+Remove elements using remove().
+Filter even numbers using condition.
+Create tuple and filter values.
+Create dictionary with key-value pairs.
+Update dictionary values.
+Filter dictionary items.
+Execute program and check output.
+
+
+Output
+List after manipulation: [10, 30, 45, 60, 80]
+Filtered even numbers: [10, 30, 60, 80]
+
+Tuple values: (78, 85, 62, 90, 55)
+Filtered marks (>70): (78, 85, 90)
+
+Dictionary after manipulation:
+{'name': 'Ravi', 'age': 20, 'department': 'AI&DS', 'marks': 92, 'grade': 'A'}
+
+Filtered dictionary:
+{'name': 'Ravi', 'department': 'AI&DS', 'marks': 92, 'grade': 'A'}
+|
+
+Result
+
+Thus manipulation and filtering of lists, tuples, and dictionaries were successfully performed.
