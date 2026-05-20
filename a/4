@@ -7,6 +7,20 @@ Theory
 
 Matplotlib is used for graphical representation of data such as line plot, bar plot, and scatter plot.
 
+Software Requirements
+•
+Operating System: Windows / macOS / Linux
+•
+Anaconda Distribution
+•
+Jupyter Notebook
+•
+Python 3.x
+•
+Pandas Library
+•
+Matplotlib Library
+
 Program
 import pandas as pd
 import matplotlib.pyplot as plt
