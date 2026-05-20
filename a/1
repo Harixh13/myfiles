@@ -8,6 +8,11 @@ Pandas is a Python library used for data analysis.
 A CSV file stores data in table format.
 Using Pandas, we can load, view, and analyze the dataset easily.
 
+Software Requirements
+Operating System: Windows / macOS / Linux
+Anaconda Distribution
+Jupyter Notebook , Python 3.x
+
 Program
 import pandas as pd
 
