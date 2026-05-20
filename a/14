@@ -1,0 +1,71 @@
+Ex. No:  — Compute Summary Statistics using Python
+Aim
+
+To compute mean, median, and standard deviation using Python.
+
+Theory
+
+Summary statistics help understand the distribution of data.
+
+Mean → Average value
+Median → Middle value
+Standard Deviation → Spread of data
+
+Software / Tools Required
+•
+Python 3.x
+•
+Anaconda Distribution
+•
+Jupyter Notebook / IDLE / Google Colab
+•
+NumPy and Pandas Libraries
+
+
+
+Program
+import numpy as np
+import pandas as pd
+
+# Dataset
+marks = [55, 65, 75, 85, 95]
+
+# DataFrame
+df = pd.DataFrame({'Marks': marks})
+
+# Statistics
+mean_value = df['Marks'].mean()
+median_value = df['Marks'].median()
+std_value = df['Marks'].std()
+
+print("Dataset:")
+print(df)
+
+print("\nMean:", mean_value)
+print("Median:", median_value)
+print("Standard Deviation:", std_value)
+
+
+
+Procedure
+Open Jupyter Notebook.
+Import NumPy and Pandas.
+Create dataset of marks.
+Convert data into DataFrame.
+Use mean() function.
+Use median() function.
+Use std() function.
+Store statistical values.
+Display results.
+Verify output.
+
+
+Output
+Mean: 75.0
+Median: 75.0
+Standard Deviation: 15.81
+
+
+Result
+
+Thus summary statistics were successfully computed using Python.
