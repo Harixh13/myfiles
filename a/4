@@ -1,0 +1,55 @@
+Ex. No:  — Importing and Visualizing a Dataset using Matplotlib
+Aim
+
+To visualize dataset using Matplotlib basic plots.
+
+Theory
+
+Matplotlib is used for graphical representation of data such as line plot, bar plot, and scatter plot.
+
+Program
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load dataset
+data = pd.read_csv('data.csv')
+
+# Line Plot
+plt.plot(data.index, data.iloc[:, 0])
+plt.title('Line Plot')
+plt.show()
+
+# Bar Plot
+plt.bar(data.index[:5], data.iloc[:5, 0])
+plt.title('Bar Plot')
+plt.show()
+
+# Scatter Plot
+plt.scatter(data.index, data.iloc[:, 0])
+plt.title('Scatter Plot')
+plt.show()
+
+
+Procedure
+Open Jupyter Notebook.
+Import Pandas and Matplotlib.
+Load CSV dataset.
+Display dataset using head().
+Create line plot using plot().
+Add graph title.
+Create bar plot using bar().
+Create scatter plot using scatter().
+Display graphs using show().
+Observe plotted graphs.
+
+
+Output
+Line Plot displayed successfully
+Bar Plot displayed successfully
+Scatter Plot displayed successfully
+
+
+
+Result
+
+Thus the dataset was successfully visualized using Matplotlib plots.
