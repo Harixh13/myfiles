@@ -1,0 +1,84 @@
+Ex. No: 11 — Handling Missing Data using fillna(), dropna(), and Interpolation
+Aim
+To identify and handle missing data using Pandas functions.
+Theory
+Missing values affect data analysis.
+Pandas provides functions like fillna(), dropna(), and interpolate() to handle missing data.
+
+Software / Tools Required
+•
+Python 3.x
+•
+Anaconda Distribution
+•
+Jupyter Notebook / IDLE / Google Colab
+•
+Pandas Library
+
+program
+import pandas as pd
+
+# Creating DataFrame
+data = {
+    'Student': ['Ravi', 'Anu', 'Kumar', 'Divya', 'Arun'],
+    'Marks': [85, None, 90, None, 88]
+}
+
+df = pd.DataFrame(data)
+
+print("Original DataFrame:")
+print(df)
+
+# Missing values
+print("\nMissing Values:")
+print(df.isna())
+
+# fillna()
+print("\nAfter fillna():")
+print(df.fillna(0))
+
+# dropna()
+print("\nAfter dropna():")
+print(df.dropna())
+
+# interpolation
+print("\nAfter Interpolation:")
+print(df.interpolate())
+
+Procedure
+
+
+Open Jupyter Notebook.
+Import Pandas library.
+Create DataFrame with missing values.
+Display original dataset.
+Identify missing values using isna()
+Replace missing values using fillna().
+Remove missing rows using dropna().
+Apply interpolation.
+Display processed data.
+Verify output.
+
+
+
+Output
+
+Original DataFrame: 
+Student  Marks
+0    Ravi   85.0
+1     Anu    NaN
+2   Kumar   90.0
+3   Divya    NaN
+4    Arun   88.0
+
+
+After fillna():  
+Student  Marks
+0    Ravi   85.0
+1     Anu    0.0
+2   Kumar   90.0
+3   Divya    0.0
+4    Arun   88.0
+
+Result
+Thus missing data was successfully handled using Pandas functions.
