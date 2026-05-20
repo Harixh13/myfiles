@@ -6,6 +6,13 @@ Theory
 
 Data inspection helps to understand dataset structure, column types, and statistical values before analysis.
 
+Software Requirements
+Operating System: Windows / macOS / Linux
+Anaconda Distribution
+Jupyter Notebook
+Python 3.x
+Pandas Library
+
 Program
 import pandas as pd
 
