@@ -1,0 +1,84 @@
+Ex. No:  — Create Basic Visualizations (Line Plot, Bar Chart) using Matplotlib in Python
+
+From the FDS lab concepts using Matplotlib
+
+Aim
+
+To create basic visualizations such as line plot and bar chart using Matplotlib in Python.
+
+Theory
+
+Data visualization helps to understand patterns and trends in data.
+Matplotlib is a Python library used for creating graphs and charts.
+
+Line Plot → Shows trends over data
+Bar Chart → Compares values between categories
+
+Software / Tools Required
+•
+Python 3.x
+•
+Anaconda Distribution
+•
+Jupyter Notebook / IDLE / Google Colab
+•
+NumPy and Pandas Libraries
+
+
+
+Program
+import matplotlib.pyplot as plt
+
+# Sample data
+students = ['Ravi', 'Anu', 'Kumar', 'Divya']
+marks = [85, 90, 78, 92]
+
+# Line Plot
+plt.figure(figsize=(6,4))
+
+plt.plot(students,
+         marks,
+         marker='o')
+
+plt.title("Line Plot")
+plt.xlabel("Students")
+plt.ylabel("Marks")
+
+plt.show()
+
+# Bar Chart
+plt.figure(figsize=(6,4))
+
+plt.bar(students,
+        marks)
+
+plt.title("Bar Chart")
+plt.xlabel("Students")
+plt.ylabel("Marks")
+
+plt.show()
+
+
+
+Procedure
+Open Jupyter Notebook.
+Import Matplotlib library.
+Create sample dataset.
+Store student names and marks.
+Use plot() for line graph.
+Add title and axis labels.
+Display line plot using show().
+Use bar() for bar chart.
+Display bar chart.
+Verify graphical output.
+
+
+Output
+Line Plot displayed successfully
+Bar Chart displayed successfully
+
+(Line plot and bar chart will appear in output screen)
+
+Result
+
+Thus the basic visualizations such as line plot and bar chart were successfully created using Matplotlib in Python.
