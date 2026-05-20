@@ -11,15 +11,20 @@ Mean → Average value
 Median → Middle value
 Standard Deviation → Spread of data
 
+Techniques Used
+1.Creating a Dataset Data is stored using Python lists and converted into a Pandas DataFrame.
+2.Using NumPy Functions
+omean() calculates average value
+omedian() finds the middle value
+ostd() computes standard deviation
+3.Using Pandas Built-in Methods Pandas provides statistical methods that work directly on columns.
+4.Understanding Central Tendency & Dispersion Mean and median represent center, while standard deviation shows variability.
+
 Software / Tools Required
-•
-Python 3.x
-•
-Anaconda Distribution
-•
-Jupyter Notebook / IDLE / Google Colab
-•
-NumPy and Pandas Libraries
+•Python 3.x
+•Anaconda Distribution
+•Jupyter Notebook / IDLE / Google Colab
+•NumPy and Pandas Libraries
 
 
 
