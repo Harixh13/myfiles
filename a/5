@@ -7,6 +7,14 @@ Theory
 
 Python data structures like list, tuple, and dictionary are used to store and process data efficiently.
 
+Software / Tools Required
+•
+Python 3.x
+•
+Anaconda / IDLE / Jupyter Notebook
+•
+Windows / Linux Operating System
+
 Program
 # List Manipulation
 numbers = [10, 25, 30, 45, 60]
