@@ -7,6 +7,18 @@ Theory
 NumPy is used for numerical operations and array processing.
 It provides fast and memory-efficient array handling.
 
+Software Requirements
+•
+Operating System: Windows / macOS / Linux
+•
+Anaconda Distribution
+•
+Jupyter Notebook
+•
+Python 3.x
+•
+NumPy Library
+
 Program
 import numpy as np
 
