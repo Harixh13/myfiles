@@ -1,0 +1,79 @@
+Ex. No: — Merge Multiple Datasets and Perform Data Alignment using Pandas
+Aim
+
+To merge multiple datasets using Pandas.
+
+Theory
+
+Merging combines data from multiple tables using common keys.
+
+Software / Tools Required
+•
+Python 3.x
+•
+Anaconda Distribution
+•
+Jupyter Notebook / IDLE / Google Colab
+•
+Pandas Library
+
+Program
+import pandas as pd
+
+# Student details dataset
+student_details = {
+    'Student_ID': [101, 102, 103, 104],
+    'Name': ['Ravi', 'Anu', 'Kumar', 'Divya'],
+    'Department': ['AI&DS', 'CSE', 'ECE', 'AI&DS']
+}
+
+df_students = pd.DataFrame(student_details)
+
+# Student marks dataset
+student_marks = {
+    'Student_ID': [101, 102, 104, 105],
+    'Marks': [85, 90, 88, 76]
+}
+
+df_marks = pd.DataFrame(student_marks)
+
+print("Student Details:")
+print(df_students)
+
+print("\nStudent Marks:")
+print(df_marks)
+
+# Merge operation
+merged_df = pd.merge(df_students,
+                     df_marks,
+                     on='Student_ID')
+
+print("\nMerged Dataset:")
+print(merged_df)
+
+
+
+Procedure
+Open Jupyter Notebook.
+Import Pandas library.
+Create first DataFrame.
+Create second DataFrame.
+Display both datasets.
+Use merge() function.
+Specify common key column.
+Merge datasets together.
+Display merged dataset.
+Verify output.
+
+
+Output
+Merged Dataset:
+   Student_ID   Name Department  Marks
+0         101   Ravi     AI&DS     85
+1         102    Anu        CSE     90
+2         104  Divya     AI&DS     88
+
+
+Result
+
+Thus multiple datasets were successfully merged using Pandas.
