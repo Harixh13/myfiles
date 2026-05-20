@@ -1,0 +1,84 @@
+Ex. No: 12 — Identify and Remove Duplicate Records in a Dataset using Pandas
+
+From the FDS manual
+
+Aim
+
+To identify and remove duplicate records using Pandas.
+
+Theory
+
+Duplicate records may create incorrect analysis.
+Pandas provides duplicated() and drop_duplicates() functions to handle duplicates.
+
+Software / Tools Required
+•
+Python 3.x
+•
+Anaconda Distribution
+•
+Jupyter Notebook / IDLE / Google Colab
+•
+Pandas Library
+
+
+
+Program
+import pandas as pd
+
+# Creating DataFrame
+data = {
+    'ID': [101, 102, 102, 103, 104, 104],
+    'Name': ['Ravi', 'Anu', 'Anu', 'Kumar', 'Divya', 'Divya'],
+    'Marks': [85, 90, 90, 78, 88, 88]
+}
+
+df = pd.DataFrame(data)
+
+print("Original DataFrame:")
+print(df)
+
+# Identifying duplicates
+print("\nDuplicate Records:")
+print(df.duplicated())
+
+# Removing duplicates
+clean_df = df.drop_duplicates()
+
+print("\nDataFrame after removing duplicates:")
+print(clean_df)
+
+
+Procedure
+Open Jupyter Notebook.
+Import Pandas library.
+Create DataFrame with duplicate records.
+Display original dataset.
+Use duplicated() function.
+Identify duplicate rows.
+Use drop_duplicates().
+Remove duplicate records.
+Display cleaned dataset.
+Verify output.
+
+
+Output
+Duplicate Records:
+0    False
+1    False
+2     True
+3    False
+4    False
+5     True
+
+DataFrame after removing duplicates:
+    ID   Name  Marks
+0  101   Ravi     85
+1  102    Anu     90
+3  103  Kumar     78
+4  104  Divya     88
+
+
+Result
+
+Thus duplicate records were successfully identified and removed using Pandas.
