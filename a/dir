@@ -1,0 +1,67 @@
+1.
+Loading a CSV File Using Pandas and Exploring Basic Data Frame Operations
+#1
+
+  
+2.
+Performing Basic Data Inspection using head(), info(), and describe() in Pandas
+  #2
+3.
+Using Basic NumPy Functions for Array Creation and Manipulation
+
+#3
+  
+4.
+Importing and Visualizing a Dataset using Matplotlib (Basic Plots)
+
+  #4
+  
+5.
+Manipulation and Filtering of Lists, Dictionaries, and Tuples in Python
+
+  #5
+6.
+Create and Index a Pandas Series and Data Frame
+
+  #6
+  
+7.
+Perform Data Selection and Slicing in Pandas Data Frame
+  #7
+  
+8.
+Group and Aggregate Data in Pandas using groupby() Operations
+
+  #8
+  
+9.
+Sort and Filter Data Based on Multiple Conditions in Pandas
+  #9
+  
+10.
+Handling Missing Data using fillna(), dropna(), and Interpolation in Pandas
+  #10
+  
+11.
+Identify and Remove Duplicate Records in a Dataset using Pandas
+  #11
+  
+12.
+Reshape Data using melt() and pivot() Functions in Pandas
+
+  #12
+  
+13.
+Merge Multiple Datasets and Perform Data Alignment using Pandas
+
+  #13
+  
+14.
+Compute Summary Statistics (Mean, Median, Standard Deviation) using Python
+
+  #14
+  
+15.
+Create Basic Visualizations (Line Plot, Bar Chart) using Matplotlib in Python
+
+  #15
