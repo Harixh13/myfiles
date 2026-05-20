@@ -1,0 +1,59 @@
+Aim
+
+To inspect the dataset using Pandas functions like head(), info(), and describe().
+
+Theory
+
+Data inspection helps to understand dataset structure, column types, and statistical values before analysis.
+
+Program
+import pandas as pd
+
+# Load dataset
+df = pd.read_csv('data.csv')
+
+# First five rows
+print("First Five Rows:")
+print(df.head())
+
+# Dataset information
+print("\nDataset Info:")
+df.info()
+
+# Statistical summary
+print("\nStatistical Summary:")
+print(df.describe())
+
+
+Procedure
+Open Jupyter Notebook.
+Import Pandas library.
+Load CSV dataset using read_csv().
+Use head() to display first records.
+Use info() to check structure.
+View column names and data types.
+Use describe() for statistics.
+Execute each cell properly.
+Observe outputs carefully.
+Verify dataset information.
+
+
+Output
+First Five Rows:
+   ID   Name  Marks
+0   1   Ravi     85
+1   2    Anu     90
+2   3  Kumar     78
+
+Dataset Info:
+<class 'pandas.core.frame.DataFrame'>
+
+Statistical Summary:
+              ID      Marks
+count   3.0       3.0
+mean    2.0      84.3
+
+
+Result
+
+Thus the dataset inspection was successfully performed using Pandas functions.
