@@ -1,0 +1,77 @@
+Aim
+
+To load a CSV file using Pandas and perform basic DataFrame operations.
+
+Theory
+
+Pandas is a Python library used for data analysis.
+A CSV file stores data in table format.
+Using Pandas, we can load, view, and analyze the dataset easily.
+
+Program
+import pandas as pd
+
+# Load CSV file
+df = pd.read_csv('data.csv')
+
+# Display first rows
+print("First Five Rows:")
+print(df.head())
+
+# Display shape
+print("\nShape of Dataset:")
+print(df.shape)
+
+# Display column names
+print("\nColumn Names:")
+print(df.columns)
+
+# Display dataset information
+print("\nDataset Information:")
+print(df.info())
+
+# Display statistical summary
+print("\nStatistical Summary:")
+print(df.describe())
+
+# Check missing values
+print("\nMissing Values:")
+print(df.isnull().sum())
+
+
+Procedure
+Open Anaconda Navigator.
+Launch Jupyter Notebook.
+Create a new Python notebook.
+Import Pandas library.
+Place data.csv in notebook folder.
+Use read_csv() to load dataset.
+Use head() to display first rows.
+Use shape to find rows and columns.
+Use info() and describe() for dataset details.
+Execute the program and observe output.
+
+
+Output
+First Five Rows:
+   ID   Name  Marks
+0   1   Ravi     85
+1   2    Anu     90
+2   3  Kumar     78
+
+Shape of Dataset:
+(3, 3)
+
+Column Names:
+Index(['ID', 'Name', 'Marks'], dtype='object')
+
+Missing Values:
+ID       0
+Name     0
+Marks    0
+dtype: int64
+
+
+Result
+
+Thus the CSV file was loaded successfully and basic DataFrame operations were performed.
